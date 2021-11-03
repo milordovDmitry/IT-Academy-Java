@@ -1,0 +1,47 @@
+package lesson2;
+
+import java.util.Scanner;
+import java.text.DecimalFormat;                                 // для округления результата без нулей в дробной
+import java.text.DecimalFormatSymbols;                          // части при получении целочисленного результата
+import java.util.Locale;                                        // для смены локальных настроек десятичного разделителя
+                                                                // (  ',' на '.' в выводимом результате)
+public class QuadraticEquation {
+    public static void main(String[] args) {
+
+        Scanner in = new Scanner(System.in);
+        DecimalFormatSymbols separator = new DecimalFormatSymbols(Locale.getDefault()); // меняем десятичный
+        separator.setDecimalSeparator('.');                                             // разделитель на с ',' на '.'
+
+
+        System.out.println("Решаем квадратное уравнение вида ax^2+bx+c=0" + "\n");
+
+        System.out.println("Введите число 'a'");
+        double a = in.nextDouble();
+
+        System.out.println("Введите число 'b'");
+        double b = in.nextDouble();
+
+        System.out.println("Введите число 'с'");
+        double c = in.nextDouble();
+
+        double D = (b * b) - (4 * a * c);                       // вычисляем дискриминант D
+
+        if (D > 0) {
+            System.out.println("\n" + "Уравнение имеет 2 корня.");      // пример чисел для проверки: 3, 7, -6
+
+            double x1 = (-b + Math.sqrt(D)) / (2 * a);
+            double x2 = (-b - Math.sqrt(D)) / (2 * a);
+
+            System.out.println("Корни уравнения: " + new DecimalFormat("#.##", separator).format(x1) +
+                    " и " + new DecimalFormat("#.##", separator).format(x2) + ".");
+
+        } else if (D == 0) {                                    //  пример чисел для проверки: 4, 1, 1
+            System.out.println("Уравнение имеет 1 корень.");
+            double x = -b / (2 * a);
+            System.out.println("Корень уравнения: " + new DecimalFormat("#.##", separator).format(x) + ".");
+
+        } else {                                                //  пример чисел для проверки: 2, 2, 1
+            System.out.println("Уравнение не имеет корней.");
+        }
+    }
+}
