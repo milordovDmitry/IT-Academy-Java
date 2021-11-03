@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.text.DecimalFormat;                                 // для округления результата без нулей в дробной
 import java.text.DecimalFormatSymbols;                          // части при получении целочисленного результата
 import java.util.Locale;                                        // для смены локальных настроек десятичного разделителя
-                                                                // (  ',' на '.' в выводимом результате)
+                                                                // (',' на '.' в выводимом результате)
 public class QuadraticEquation {
     public static void main(String[] args) {
 
