@@ -26,13 +26,18 @@ public class MathOperations {
         int arg6 = in.nextInt();
         System.out.println("Произведение чисел равно = " + (arg5 * arg6) + "\n");
 
-        System.out.println("Деление чисел");
-        System.out.println("Введите первое число:");
+        System.out.println("Деление чисел" + "\n" + "Введите первое число:");
+
         double arg7 = in.nextDouble();
         System.out.println("Введите второе число:");
-        double arg8 = in.nextDouble();
-        System.out.println("Частное чисел равно = " + (arg7 / arg8));
-
-
+        while (true) {
+            double arg8 = in.nextDouble();
+            if (arg8 == 0) {
+                System.out.println("Деление на ноль невозможно" + "\n" + "Введите второе число:");
+            } else {
+                System.out.println("Частное чисел равно = " + (arg7 / arg8));
+                break;
+            }
+        }
     }
 }
