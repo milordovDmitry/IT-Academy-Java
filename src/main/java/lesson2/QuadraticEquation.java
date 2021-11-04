@@ -42,17 +42,17 @@ public class QuadraticEquation {
                     System.out.println("Корни уравнения: " + new DecimalFormat("#.##", separator).format(x1) +
                             " и " + new DecimalFormat("#.##", separator).format(x2) + ".");
 
-                } else if (D == 0) {                                             //  пример чисел для проверки: 4, 1, 1
+                } else if (D == 0) {                                             //  пример чисел для проверки: 4, 4, 1
                     System.out.println("Уравнение имеет 1 корень.");
+
                     double x = -b / (2 * a);
+
                     System.out.println("Корень уравнения: " + new DecimalFormat("#.##", separator).format(x) + ".");
 
-                } else {                                                          //  пример чисел для проверки: 2,2, 1
+                } else {                                                          //  пример чисел для проверки: 2, 2, 1
                     System.out.println("Уравнение не имеет корней.");
-                    break;
-
                 }
-
+                break;
             }
         }
     }
