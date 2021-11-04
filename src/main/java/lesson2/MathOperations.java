@@ -28,7 +28,7 @@ public class MathOperations {
 
         System.out.println("Деление чисел");
         System.out.println("Введите первое число:");
-        double arg7 = in.nextInt();
+        double arg7 = in.nextDouble();
         System.out.println("Введите второе число:");
         double arg8 = in.nextDouble();
         System.out.println("Частное чисел равно = " + (arg7 / arg8));
