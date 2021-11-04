@@ -7,6 +7,7 @@ import java.util.Scanner;                           // (',' на '.' в выво
 
 
 public class QuadraticEquation {
+
     public static void main(String[] args) {
 
         Scanner in = new Scanner(System.in);
@@ -46,8 +47,7 @@ public class QuadraticEquation {
                     double x = -b / (2 * a);
                     System.out.println("Корень уравнения: " + new DecimalFormat("#.##", separator).format(x) + ".");
 
-                } else {                                                           //  пример чисел для проверки: 2,
-                    // 2, 1
+                } else {                                                          //  пример чисел для проверки: 2,2, 1
                     System.out.println("Уравнение не имеет корней.");
                     break;
 
