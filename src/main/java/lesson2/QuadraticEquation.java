@@ -1,12 +1,16 @@
 package lesson2;
 
-import java.text.DecimalFormat;                     // для округления результата без нулей в дробной
-import java.text.DecimalFormatSymbols;              // части при получении целочисленного результата
+import java.text.DecimalFormat;                     // для округления результата без нулей в дробной части при
+import java.text.DecimalFormatSymbols;              // получении целочисленного результата или числа  вида #.#0
 import java.util.Locale;                            // для смены локальных настроек десятичного разделителя
 import java.util.Scanner;                           // (',' на '.' в выводимом результате)
 
 
 public class QuadraticEquation {
+    /**
+     *  Решение квадратного равнения и вывод его корней в формате #.## с округлением до второго знака после точки и
+     * отрасыванием нулей в дробной части
+     * */
 
     public static void main(String[] args) {
 
