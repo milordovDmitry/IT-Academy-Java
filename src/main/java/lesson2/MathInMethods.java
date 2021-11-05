@@ -58,7 +58,7 @@ public class MathInMethods {
             } else if (command == 5) {
                 break;
             } else {
-                System.out.println("Такой операции нет." + "\n" + "Введите число от 1 до 4.");
+                System.out.println("Такой операции нет." + "\n" + "Введите число от 1 до 5.");
             }
         }
 
