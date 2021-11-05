@@ -16,7 +16,8 @@ public class MathInMethods {
                 System.out.println("Введите втрое число 2");
                 int arg2 = in.nextInt();
 
-                System.out.println("Сумма чисел " + arg1 + " и " + arg2 + " составляет " + summation(arg1, arg2) + "\n");
+                System.out.println("Сумма чисел " + arg1 + " и " + arg2 + " составляет " + summation(arg1, arg2) +
+                        "\n");
 
 
             } else if (command == 2) {
@@ -54,11 +55,9 @@ public class MathInMethods {
 
                 }
 
-            }
-            else if (command == 5){
+            } else if (command == 5) {
                 break;
-            }
-            else{
+            } else {
                 System.out.println("Такой операции нет." + "\n" + "Введите число от 1 до 4.");
             }
         }
@@ -85,8 +84,7 @@ public class MathInMethods {
     }
 
     public static double division(double arg1, double arg2) {
-        while (true)
-            return arg1 / arg2;
+        return arg1 / arg2;
     }
 }
 
