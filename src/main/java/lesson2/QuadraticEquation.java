@@ -8,9 +8,9 @@ import java.util.Scanner;
 
 public class QuadraticEquation {
     /**
-     *  Решение квадратного равнения и вывод его корней в формате #.## с округлением до второго знака после точки и
+     * Решение квадратного равнения и вывод его корней в формате #.## с округлением до второго знака после точки и
      * отбрасыванием нулей в дробной части
-     * */
+     */
 
     public static void main(String[] args) {
 
@@ -45,7 +45,7 @@ public class QuadraticEquation {
                 } else if (d == 0) {                                            //  пример чисел для проверки: 4, 4, 1
                     System.out.println("Уравнение имеет 1 корень.");
 
-                  double x = -b / (2 * a);
+                    double x = -b / (2 * a);
 
                     System.out.println("Корень уравнения: " + new DecimalFormat("#.##", separator).format(x) + ".");
 
