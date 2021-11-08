@@ -50,7 +50,6 @@ public class MathInMethods {
                         break;
                     }
                 }
-
             } else if (command == 5) {
                 break;
             } else {
