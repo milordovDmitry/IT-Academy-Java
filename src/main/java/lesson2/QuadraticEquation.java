@@ -52,6 +52,7 @@ public class QuadraticEquation {
                 } else {                                                         //  пример чисел для проверки: 2, 2, 1
                     System.out.println("Уравнение не имеет корней.");
                 }
+
                 break;
             }
         }
