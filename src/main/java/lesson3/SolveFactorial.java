@@ -7,11 +7,10 @@ public class SolveFactorial {
         System.out.println("Введите число, для которого хотите посчитать факториал:");
         Scanner in = new Scanner(System.in);
         int a = in.nextInt();
-        System.out.println(getFactorial(a));
+        System.out.println("Факториал числа " + a + " = " + getFactorial(a) + ".");
     }
 
-    private static long getFactorial(long f) {
-
+    public static long getFactorial(long f) {
         long result = 1;
         for (long i = f; i > 1; i--) {
             result = result * i;
