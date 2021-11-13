@@ -23,11 +23,12 @@ public class BruteForceSqRoot {
             }
         }
     }
-        public static int findRoot(int a) {
-            int i;
-            for (i = 0; a != (i * i); i++);
-            return i;
-        }
+
+    public static int findRoot(int a) {
+        int i;
+        for (i = 0; a != (i * i); i++) ;
+        return i;
     }
+}
 
 
