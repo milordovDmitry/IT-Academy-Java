@@ -18,7 +18,7 @@ public class BruteForceSqRoot {
                 System.out.println("Невозможно найти корень отрицального числа" + "\n" + "Введите число: ");
             } else {
                 int root = findRoot(a);
-                System.out.println("квадратный корень числа " + a + " = " + root);
+                System.out.println("квадратный корень числа " + a + " = " + root + ".");
                 break;
             }
         }
