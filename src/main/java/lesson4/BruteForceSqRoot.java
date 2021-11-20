@@ -5,30 +5,25 @@ import java.util.Scanner;
 public class BruteForceSqRoot {
 
     public static void main(String[] args) {
-        System.out.println("Введите число, для которого вы хотите найти корень: ");
         Scanner in = new Scanner(System.in);
+        System.out.print("Найти корень числа: ");
+        int a = in.nextInt();
+        squareRoot(a);
+    }
 
-        while (true) {
-            int a = in.nextInt();
-
-            if (a == 0) {
-                System.out.println("Корень числа 0 = 0.");
-                break;
-            } else if (a < 0) {
-                System.out.println("Невозможно найти корень отрицального числа" + "\n" + "Введите число: ");
-            } else {
-                int root = findRoot(a);
-                System.out.println("квадратный корень числа " + a + " = " + root + ".");
-                break;
+    public static void squareRoot(int a) {
+        if (a < 0) {
+            System.out.println("Нет корня");
+        } else {
+            for (int i = 0; i * i <= a; i++) {
+               int  twoSquared = i * i;
+                if (twoSquared == a) {
+                    System.out.println("корень квадратный из числа: " + i + " и " + -i);
+                    break;
+                } else if ((i + 1) * (i + 1) > a) {
+                    System.out.println("Нет целочисленного решения решения");
+                }
             }
         }
     }
-
-    public static int findRoot(int a) {
-        int i;
-        for (i = 0; a != (i * i); i++);
-        return i;
-    }
 }
-
-
