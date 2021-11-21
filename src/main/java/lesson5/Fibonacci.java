@@ -8,8 +8,6 @@ public class Fibonacci {
         System.out.println("Введите номер члена ряда Фибоначчи: ");
         int n = in.nextInt();
         System.out.println(n + " - ый член последовательности Фибоначчи " + finFib(n));
-
-
     }
 
     public static int finFib(int n) {
