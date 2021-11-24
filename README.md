@@ -1,2 +1,4 @@
 # IT-Academy-Java
-Java lesssons
+
+«Программирование на языке Java от beginner до middle»/
+IT Park 2021. 
