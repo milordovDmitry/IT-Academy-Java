@@ -33,7 +33,6 @@ public class ArrayFib {
                 System.out.println(Arrays.toString(fibArray));
             }
         }
-
     }
 
     public static void printMenu() {
