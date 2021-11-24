@@ -10,6 +10,7 @@ public class ArrayFib {
         for (int i = 0; i < fibArray.length; i++) {
             fibArray[i] = -1;
         }
+
         while (true) {
             printMenu();
             int n = in.nextInt();
