@@ -14,7 +14,7 @@ public class Tiger {
         if (runDist < maxRunDist) {
             System.out.println("Тигр по кличке " + name + " пробежал " + runDist + " метров.");
         } else {
-            System.out.println("Тигр по кличке "  + name + " не может пробежать больше 700 метров.");
+            System.out.println("Тигр по кличке " + name + " не может пробежать больше 700 метров.");
         }
     }
 

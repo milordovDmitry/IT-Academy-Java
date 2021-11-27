@@ -14,7 +14,7 @@ public class Dog {
         if (runDist < maxRunDist) {
             System.out.println("Собака по кличке " + name + " пробежала " + runDist + " метров.");
         } else {
-            System.out.println("Собака по кличке "  + name + " не может пробежать больше 500 метров.");
+            System.out.println("Собака по кличке " + name + " не может пробежать больше 500 метров.");
         }
     }
 
