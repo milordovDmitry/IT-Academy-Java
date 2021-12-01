@@ -1,4 +1,4 @@
-package lesson8.absract;
+package lesson8.abs;
 
 public class Dog extends Animal {
     String animalClass = "Собака";
