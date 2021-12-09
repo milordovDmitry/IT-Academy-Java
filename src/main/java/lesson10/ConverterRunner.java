@@ -8,6 +8,7 @@ public class ConverterRunner {
 
         printMenu();
     }
+
     // стартовое меню
     public static void printMenu() {
         while (true) {
@@ -155,6 +156,7 @@ public class ConverterRunner {
         }
         return inD.nextDouble();
     }
+
     // проверка на ввод int
     private static int inputInt() {
         Scanner in = new Scanner(System.in);
