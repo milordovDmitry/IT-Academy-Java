@@ -9,7 +9,7 @@ public class Methods {
         while (true) {
 
             System.out.println("Что будем конвертировать?\nВведите номер:");
-            System.out.println("'1' - Деньги" + "\n" + "'2' - Температура" + "\n" + "'3' - завершить работу " +
+            System.out.println("'1' - Деньги" + "\n" + "'2' - Температура" + "\n" + "'3' - Завершить работу " +
                     "программы.");
 
             int command = inputInt();
