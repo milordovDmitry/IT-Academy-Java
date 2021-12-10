@@ -1,11 +1,11 @@
 package lesson10;
 
-public class Dollars implements Convertible {
-    final String type = "Доллары";
+public class Ruble implements Convertible {
+    final String type = "Рубли";
     public double sum;
 
 
-    public Dollars(double sum) {
+    public Ruble(double sum) {
         this.sum = sum;
     }
 

@@ -45,7 +45,7 @@ public class Methods {
             if (commandCurrency == 1) {
                 System.out.println("Введите сумму в рублях");
                 double sumR = inputDouble();
-                Rubles rub = new Rubles(sumR);
+                Ruble rub = new Ruble(sumR);
                 System.out.println("Сумма в рублях: " + sumR);
                 System.out.println("--------------------------------");
 
@@ -55,11 +55,11 @@ public class Methods {
                     int rToAnother = inputInt();
                     if (rToAnother == 1) {
                         System.out.println("--------------------------------");
-                        System.out.println("Суммах в рублях: " + sumR + "\n" + "Сумма в долларах: " + rub.convert(rub.sum, CurrencyCourses.RUBTODOL.getCourse()));
+                        System.out.println("Суммах в рублях: " + sumR + "\n" + "Сумма в долларах: " + rub.convert(sumR, CurrencyCourses.RUBTODOL.getCourse()));
                         System.out.println("--------------------------------");
                     } else if (rToAnother == 2) {
                         System.out.println("--------------------------------");
-                        System.out.println("Суммах в рублях: " + sumR + "\n" + "Сумма в евро: " + rub.convert(rub.sum
+                        System.out.println("Суммах в рублях: " + sumR + "\n" + "Сумма в евро: " + rub.convert(sumR
                                 , CurrencyCourses.RUBTOEUR.getCourse()));
                         System.out.println("--------------------------------");
                     } else if (rToAnother == 3) {
@@ -75,7 +75,7 @@ public class Methods {
             } else if (commandCurrency == 2) {
                 System.out.println("Введите сумму в долларах");
                 double sumD = inputDouble();
-                Dollars dol = new Dollars(sumD);
+                Dollar dol = new Dollar(sumD);
                 System.out.println("Сумма в долларах: " + sumD);
                 System.out.println("--------------------------------");
 
@@ -85,11 +85,11 @@ public class Methods {
                     int dToAnother = inputInt();
                     if (dToAnother == 1) {
                         System.out.println("--------------------------------");
-                        System.out.println("Суммах в долларах: " + sumD + "\n" + "Сумма в рублях: " + dol.convert(dol.sum, CurrencyCourses.DOLTORUB.getCourse()));
+                        System.out.println("Суммах в долларах: " + sumD + "\n" + "Сумма в рублях: " + dol.convert(sumD, CurrencyCourses.DOLTORUB.getCourse()));
                         System.out.println("--------------------------------");
                     } else if (dToAnother == 2) {
                         System.out.println("--------------------------------");
-                        System.out.println("Суммах в долларах: " + sumD + "\n" + "Сумма в евро: " + dol.convert(dol.sum
+                        System.out.println("Суммах в долларах: " + sumD + "\n" + "Сумма в евро: " + dol.convert(sumD
                                 , CurrencyCourses.DOLTOEUR.getCourse()));
                         System.out.println("--------------------------------");
                     } else if (dToAnother == 3) {
@@ -114,11 +114,11 @@ public class Methods {
                     int rToAnother = inputInt();
                     if (rToAnother == 1) {
                         System.out.println("--------------------------------");
-                        System.out.println("Суммах в евро: " + sumE + "\n" + "Сумма в долларах: " + eur.convert(eur.sum, CurrencyCourses.EURTODOL.getCourse()));
+                        System.out.println("Суммах в евро: " + sumE + "\n" + "Сумма в долларах: " + eur.convert(sumE, CurrencyCourses.EURTODOL.getCourse()));
                         System.out.println("--------------------------------");
                     } else if (rToAnother == 2) {
                         System.out.println("--------------------------------");
-                        System.out.println("Суммах в евро: " + sumE + "\n" + "Сумма в рублях: " + eur.convert(eur.sum
+                        System.out.println("Суммах в евро: " + sumE + "\n" + "Сумма в рублях: " + eur.convert(sumE
                                 , CurrencyCourses.EURTORUB.getCourse()));
                         System.out.println("--------------------------------");
 
