@@ -114,7 +114,8 @@ public class Methods {
                     int rToAnother = inputInt();
                     if (rToAnother == 1) {
                         System.out.println("--------------------------------");
-                        System.out.println("Суммах в евро: " + sumE + "\n" + "Сумма в долларах: " + eur.convert(sumE, CurrencyCourses.EURTODOL.getCourse()));
+                        System.out.println("Суммах в евро: " + sumE + "\n" + "Сумма в долларах: " + eur.convert(sumE,
+                                CurrencyCourses.EURTODOL.getCourse()));
                         System.out.println("--------------------------------");
                     } else if (rToAnother == 2) {
                         System.out.println("--------------------------------");
