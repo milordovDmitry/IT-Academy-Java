@@ -14,7 +14,7 @@ public class Truck extends Vehicle {
     @Override
     public void move() throws SpeedException {
         if (speed > 80 & speed < 100) {
-            throw new SpeedException(type + " с государственным номером " + number + " сбавте скорость!");
+            throw new SpeedException(type + " с государственным номером " + number + " сбавьте скорость!");
         } else if (speed > 100) {
             throw new SpeedException("Андрюха, у нас превышение более 20 км/ч. Возможно криминал. По коням!" +
                     " " + "Нарушитель: " + type + " с государственным номером " + number + ".");
@@ -47,10 +47,10 @@ public class Truck extends Vehicle {
     public void kpp(double weightLimit, double widthLimit, double heightLimit) throws KppParamException {
 
         if (weight > weightLimit || height > heightLimit || width > widthLimit) {
-            throw new KppParamException("Транспорное средство " + type + " с гос номером " + number + " не может " +
+            throw new KppParamException("Транспорное средство " + type + " с государственным номером " + number + " не может " +
                     "проехать КПП.");
         } else {
-            System.out.println("Транспорное средство " + type + " с гос номером " + number + " проехало КПП.");
+            System.out.println("Транспорное средство " + type + " с государственным номером " + number + " проехало КПП.");
         }
     }
 }

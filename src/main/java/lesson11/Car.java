@@ -11,7 +11,7 @@ public class Car extends Vehicle {
     @Override
     public void move() throws SpeedException {
         if (speed > 80 & speed < 100) {
-            throw new SpeedException(type + " с государственным номером " + number + " сбавтье скорость!");
+            throw new SpeedException(type + " с государственным номером " + number + " сбавьте скорость!");
         } else if (speed > 100) {
             throw new SpeedException("Андрюха, у нас превышение более 20 км/ч. Возможно криминал. По коням!" +
                     " " + "Нарушитель: " + type + " с государственным номером " + number + ".");
@@ -30,7 +30,7 @@ public class Car extends Vehicle {
     }
 
     public void checkKpp(double weightLimit, double widthLimit, double heightLimit) {
-        System.out.println("Транспорное средство " + type + " c государственным номером" + number + " проехало КПП.");
+        System.out.println("Транспорное средство " + type + " c государственным номером " + number + " проехало КПП.");
     }
 
     @Override
