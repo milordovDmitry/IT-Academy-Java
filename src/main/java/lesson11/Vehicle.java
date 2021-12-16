@@ -5,7 +5,7 @@ public abstract class Vehicle {
     protected int speed;
     protected double weight, width, height;
     public abstract void move();
-    public abstract void kpp();
+
 
     public String getNumber() {
         return number;
@@ -26,4 +26,6 @@ public abstract class Vehicle {
     public double getHeight() {
         return height;
     }
+
+    public abstract void kpp(double weightLimit, double widthLimit, double heightLimit);
 }

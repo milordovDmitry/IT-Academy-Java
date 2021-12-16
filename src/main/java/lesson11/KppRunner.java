@@ -2,6 +2,11 @@ package lesson11;
 
 public class KppRunner {
     public static void main(String[] args) {
+
+        double weightLimit = 8;
+        double widthLimit = 2.5;
+        double heightLimit = 4;
+
         Vehicle[] vehicles = new Vehicle[8];
 
         vehicles[0] = new Car();
@@ -14,12 +19,9 @@ public class KppRunner {
         vehicles[7] = new Truck();
 
         for (Vehicle v : vehicles) {
-            try {
-                v.kpp();
-            } catch (SpeedException e) {
-
-            }
-            System.out.println("----------------------------------");
+            v.kpp(weightLimit, widthLimit, heightLimit);
         }
+        System.out.println("----------------------------------");
     }
 }
+

@@ -2,6 +2,8 @@ package lesson11;
 
 public class MoveRunner {
     public static void main(String[] args) {
+
+
         Vehicle[] vehicles = new Vehicle[8];
 
         vehicles[0] = new Car();
@@ -14,12 +16,10 @@ public class MoveRunner {
         vehicles[7] = new Truck();
 
         for (Vehicle v : vehicles) {
-            try {
-                v.move();
-            } catch (SpeedException e) {
-
-            }
-            System.out.println("----------------------------------");
+            v.move();
         }
+
+        System.out.println("----------------------------------");
     }
 }
+

@@ -10,7 +10,7 @@ public class Car extends Vehicle {
 
 
     @Override
-    public void move() throws SpeedException{
+    public void move() throws SpeedException {
         if (speed > 80 & speed < 100) {
             throw new SpeedException(type + " с гос номером " + number + " сбавтье скорость!");
         } else if (speed > 100) {
@@ -23,9 +23,8 @@ public class Car extends Vehicle {
     }
 
     @Override
-    public void kpp() {
-        System.out.println("Транспорное средство " + type + " с гос номером " + number + " меожет успешно проехать КПП");
+    public void kpp(double weightLimit, double widthLimit, double heightLimit) {
+        System.out.println("Транспорное средство " + type + " с гос номером " + number + " проехало КПП");
         //  легковой автомобиль всегда может проехать КПП.
-
     }
 }
