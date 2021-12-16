@@ -9,9 +9,6 @@ public class Truck extends Vehicle {
     private double weight = getRndTruckWeight();
     private double width = getRndTruckWidth();
     private double height = getRndHeight();
-    private double weightLimit;
-    private double widthLimit;
-    private double heightLimit;
 
 
     @Override
@@ -27,14 +24,34 @@ public class Truck extends Vehicle {
         }
     }
 
+    public void checkSpd() {
+        try {
+            move();
+        } catch (SpeedException e) {
+            System.out.println(e);
+        }
+    }
+
+
     @Override
-    public void kpp ( double weightLimit, double widthLimit,double heightLimit) throws KppParamException {
+    public void checkKpp(double weightLimit, double widthLimit, double heightLimit) {
+
+        try {
+            kpp(weightLimit, widthLimit, heightLimit);
+        } catch (KppParamException e) {
+            System.out.println(e);
+        }
+    }
+
+    @Override
+    public void kpp(double weightLimit, double widthLimit, double heightLimit) throws KppParamException {
 
         if (weight > weightLimit || height > heightLimit || width > widthLimit) {
             throw new KppParamException("Транспорное средство " + type + " с гос номером " + number + " не может " +
-                    "проехать КПП");
+                    "проехать КПП.");
         } else {
-            System.out.println("Транспорное средство " + type + " с гос номером " + number + " проехало КПП");
+            System.out.println("Транспорное средство " + type + " с гос номером " + number + " проехало КПП.");
         }
     }
 }
+

@@ -8,7 +8,6 @@ public class Car extends Vehicle {
     private String number = genCarNumber();
     private int speed = getRndCarSpd();
 
-
     @Override
     public void move() throws SpeedException {
         if (speed > 80 & speed < 100) {
@@ -18,8 +17,20 @@ public class Car extends Vehicle {
                     " " + "Нарушитель: " + type + " с госномером " + number + ".");
         } else {
             System.out.println("Транспортное средство " + type + " с государственным номером " + number + " движется " +
-                    "со скоростью " + speed + ".");
+                    "со скоростью " + speed + " км/ч.");
         }
+    }
+
+    public void checkSpd() {
+        try {
+            move();
+        } catch (SpeedException e) {
+            System.out.println(e);
+        }
+    }
+
+    public void checkKpp(double weightLimit, double widthLimit, double heightLimit) {
+        System.out.println("Транспорное средство " + type + " с гос номером " + number + " проехало КПП");
     }
 
     @Override
