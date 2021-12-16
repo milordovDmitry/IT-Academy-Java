@@ -1,6 +1,6 @@
 package lesson11;
 
-public class KppRunner {
+public class Runner {
     public static void main(String[] args) {
 
         double weightLimit = 8;
@@ -19,8 +19,12 @@ public class KppRunner {
         vehicles[7] = new Truck();
 
         for (Vehicle v : vehicles) {
-            v.kpp(weightLimit, widthLimit, heightLimit);
-        }
+            v.checkSpd();
+            System.out.println();
+            v.checkKpp(weightLimit, widthLimit, heightLimit);
+            System.out.println("-----------------------------------------------------");
+               }
+
         System.out.println("----------------------------------");
     }
 }
