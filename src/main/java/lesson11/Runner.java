@@ -21,7 +21,7 @@ public class Runner {
         for (Vehicle v : vehicles) {
             v.checkSpd();
             v.checkKpp(weightLimit, widthLimit, heightLimit);
-            System.out.println("-----------------------------------------------------");
+            System.out.println("-------------------------------------------------------------------------------------");
         }
 
         System.out.println("----------------------------------");
