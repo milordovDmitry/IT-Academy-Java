@@ -5,17 +5,16 @@ import java.util.Random;
 public class MethodsKPP {
 
     public static String genCarNumber() {
-        return (geтRndLetter() + getRndNumber() + getRndNumber() + getRndNumber() + geтRndLetter() + geтRndLetter());
+        return (getRndLetter() + getRndNumber() + getRndNumber() + getRndNumber() + getRndLetter() + getRndLetter());
     }
 
     public static String getRndNumber() {
         int rndNumber = ((int) (Math.random() * 10));
         String rndNumberStr = String.valueOf(rndNumber);
         return rndNumberStr;
-
     }
 
-    public static Letters geтRndLetter() {
+    public static Letters getRndLetter() {
         Letters[] values = Letters.values();
         int length = values.length;
         int rndIndex = new Random().nextInt(length);
