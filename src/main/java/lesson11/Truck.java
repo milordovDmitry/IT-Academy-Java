@@ -14,10 +14,10 @@ public class Truck extends Vehicle {
     @Override
     public void move() throws SpeedException {
         if (speed > 80 & speed < 100) {
-            throw new SpeedException(type + " с гос номером " + number + " сбавте скорость!");
+            throw new SpeedException(type + " с государственным номером " + number + " сбавте скорость!");
         } else if (speed > 100) {
             throw new SpeedException("Андрюха, у нас превышение более 20 км/ч. Возможно криминал. По коням!" +
-                    " " + "Нарушитель: " + type + " с госномером " + number + ".");
+                    " " + "Нарушитель: " + type + " с государственным номером " + number + ".");
         } else {
             System.out.println("Транспортное средство " + type + " с государственным номером " + number + " движется " +
                     "со скоростью " + speed + " км/ч.");
