@@ -14,8 +14,8 @@ public class MethodsKPP {
         return rndNumberStr;
     }
 
-    public static Letters getRndLetter() {
-        Letters[] values = Letters.values();
+    public static LETTERS getRndLetter() {
+        LETTERS[] values = LETTERS.values();
         int length = values.length;
         int rndIndex = new Random().nextInt(length);
         return values[rndIndex];
