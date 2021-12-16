@@ -30,12 +30,12 @@ public class Car extends Vehicle {
     }
 
     public void checkKpp(double weightLimit, double widthLimit, double heightLimit) {
-        System.out.println("Транспорное средство " + type + " с гос номером " + number + " проехало КПП");
+        System.out.println("Транспорное средство " + type + " с гос номером " + number + " проехало КПП.");
     }
 
     @Override
     public void kpp(double weightLimit, double widthLimit, double heightLimit) {
-        System.out.println("Транспорное средство " + type + " с гос номером " + number + " проехало КПП");
+        System.out.println("Транспорное средство " + type + " с гос номером " + number + " проехало КПП.");
         //  легковой автомобиль всегда может проехать КПП.
     }
 }
