@@ -20,7 +20,7 @@ public class Truck extends Vehicle {
                     " " + "Нарушитель: " + type + " с госномером " + number + ".");
         } else {
             System.out.println("Транспортное средство " + type + " с государственным номером " + number + " движется " +
-                    "со скоростью " + speed + ".");
+                    "со скоростью " + speed + " км/ч.");
         }
     }
 
