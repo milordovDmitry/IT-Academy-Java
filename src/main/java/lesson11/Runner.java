@@ -20,10 +20,9 @@ public class Runner {
 
         for (Vehicle v : vehicles) {
             v.checkSpd();
-            System.out.println();
             v.checkKpp(weightLimit, widthLimit, heightLimit);
             System.out.println("-----------------------------------------------------");
-               }
+        }
 
         System.out.println("----------------------------------");
     }

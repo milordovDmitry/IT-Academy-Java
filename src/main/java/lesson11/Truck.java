@@ -47,10 +47,12 @@ public class Truck extends Vehicle {
     public void kpp(double weightLimit, double widthLimit, double heightLimit) throws KppParamException {
 
         if (weight > weightLimit || height > heightLimit || width > widthLimit) {
-            throw new KppParamException("Транспорное средство " + type + " с государственным номером " + number + " не может " +
+            throw new KppParamException("Транспорное средство " + type + " с государственным номером " + number + " " +
+                    "не может " +
                     "проехать КПП.");
         } else {
-            System.out.println("Транспорное средство " + type + " с государственным номером " + number + " проехало КПП.");
+            System.out.println("Транспорное средство " + type + " с государственным номером " + number + " проехало " +
+                    "КПП.");
         }
     }
 }
