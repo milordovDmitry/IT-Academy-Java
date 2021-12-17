@@ -1,6 +1,6 @@
 package lesson11;
 
-public enum LETTERS {
+public enum Letters {
 
     A,
     B,
