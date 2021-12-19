@@ -31,7 +31,6 @@ public class Methods {
         return values[rndIndex];
     }
 
-
     public static void printEmployee(Collection<Employee> employees, int workAge) {
         System.out.println("Рабочий стаж в " + workAge + " лет имеют следующие сотрудники:");
 
@@ -51,8 +50,8 @@ public class Methods {
             if (iterator.nextIndex() % 2 != 0) {
                 iterator.remove();
             }
-
         }
+
         System.out.println("Список сотрудников после сокращения: ");
         for (Employee emp : employees) {
             System.out.println(emp);

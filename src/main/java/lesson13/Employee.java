@@ -25,6 +25,6 @@ public class Employee {
 
     @Override
     public String toString() {
-        return  ("Работник по имени " + fio + " с персональным номером " + personnelNumber +  " имеет опыт работы " + workAge + " лет.");
+        return ("Работник по имени " + fio + " с персональным номером " + personnelNumber + " имеет опыт работы " + workAge + " лет.");
     }
 }

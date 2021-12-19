@@ -26,9 +26,7 @@ public class EmployeeRunner {
         System.out.println();
 
         deleteEven(employees);
-
-
-        }
     }
+}
 
 
