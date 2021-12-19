@@ -1,8 +1,6 @@
 package lesson13;
 
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.Random;
+import java.util.*;
 
 public class Methods {
 
@@ -38,13 +36,26 @@ public class Methods {
         System.out.println("Рабочий стаж в " + workAge + " лет имеют следующие сотрудники:");
 
 
-        for (Iterator<Employee> iterator = employees.iterator(); iterator.hasNext();){
+        for (Iterator<Employee> iterator = employees.iterator(); iterator.hasNext(); ) {
             Employee employee = iterator.next();
             if (employee.getWorkAge() == workAge) {
                 System.out.println(employee.getFio() + " идентификационный номер: " + employee.getPersonnelNumber());
             }
         }
     }
-    public static void deleteEven (Collection<Employee> employees) {
+
+    public static void deleteEven(Collection<Employee> employees) {
+        ArrayList<Employee> firedEmployee = (ArrayList<Employee>) employees;
+        for (ListIterator<Employee> iterator = firedEmployee.listIterator(firedEmployee.size()); iterator.hasPrevious(); ) {
+            Employee fired = iterator.previous();
+            if (iterator.nextIndex() % 2 != 0) {
+                iterator.remove();
+            }
+
+        }
+        System.out.println("Список сотрудников после сокращения: ");
+        for (Employee emp : employees) {
+            System.out.println(emp);
+        }
     }
 }

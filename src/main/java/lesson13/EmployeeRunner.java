@@ -22,6 +22,13 @@ public class EmployeeRunner {
         }
         System.out.println();
         printEmployee(employees, 5);
+
+        System.out.println();
+
+        deleteEven(employees);
+
+
+        }
     }
-}
+
 
