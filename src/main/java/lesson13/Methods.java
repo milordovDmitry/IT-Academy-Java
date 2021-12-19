@@ -33,12 +33,18 @@ public class Methods {
         return values[rndIndex];
     }
 
+
     public static void printEmployee(Collection<Employee> employees, int workAge) {
         System.out.println("Рабочий стаж в " + workAge + " лет имеют следующие сотрудники:");
-        for (Employee employee : employees) {
+
+
+        for (Iterator<Employee> iterator = employees.iterator(); iterator.hasNext();){
+            Employee employee = iterator.next();
             if (employee.getWorkAge() == workAge) {
                 System.out.println(employee.getFio() + " идентификационный номер: " + employee.getPersonnelNumber());
             }
         }
+    }
+    public static void deleteEven (Collection<Employee> employees) {
     }
 }
