@@ -39,7 +39,7 @@ public class StreamAPIRunner {
 
     static String inputText() {
         System.out.println("Введите текст:");
-       return  in.nextLine();
+        return in.nextLine();
     }
-
 }
+
