@@ -1,6 +1,7 @@
 package lesson15;
 
 import java.util.Map;
+import java.util.Scanner;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -9,7 +10,8 @@ public class StreamAPIRunner {
     public static void main(String[] args) {
 
 
-        splitAndCalculate("Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales consectetur purus at  " +
+        splitAndCalculate("Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales consectetur purus at " +
+                " " +
                 "blandit blandit " +
                 "faucibus. Donec mi quam, tempor vel ipsum non, faucibus suscipit massa. Morbi lacinia velit blandit " +
                 "tincidunt efficitur. Vestibulum eget metus imperdiet sapien laoreet faucibus. Nunc eget vehicula " +
@@ -18,7 +20,11 @@ public class StreamAPIRunner {
 
         splitAndCalculate("Семь раз отмерь, 1 раз отрежь!");
 
+        String str = inputText();
+        splitAndCalculate(str);
+
     }
+
     static void splitAndCalculate(String s) {
         Map<String, Integer> map1 = Stream.of(s.split("[^A-Za-zА-Яа-я0-9]+"))
                 .map(String::toLowerCase)
@@ -27,6 +33,12 @@ public class StreamAPIRunner {
                 .sorted((a, b) -> b.getValue() - a.getValue())
                 .forEach((a) -> System.out.println(a.getKey()));
         System.out.println("-----------------------------------");
+    }
 
+    static Scanner in = new Scanner(System.in);
+
+    static String inputText() {
+        System.out.println("Введите текст:");
+       return  in.nextLine();
     }
 }
