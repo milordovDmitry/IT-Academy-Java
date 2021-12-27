@@ -10,13 +10,11 @@ public class StreamAPIRunner {
     public static void main(String[] args) {
 
 
-        splitAndCalculate("Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales consectetur purus at " +
-                " " +
-                "blandit blandit " +
+        splitAndCalculate("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales consectetur purus at " +
                 "faucibus. Donec mi quam, tempor vel ipsum non, faucibus suscipit massa. Morbi lacinia velit blandit " +
                 "tincidunt efficitur. Vestibulum eget metus imperdiet sapien laoreet faucibus. Nunc eget vehicula " +
                 "mauris, ac auctor lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel odio " +
-                "nec mi tempor dignissim blandit.");
+                "nec mi tempor dignissim.");
 
         splitAndCalculate("Семь раз отмерь, 1 раз отрежь!");
 
