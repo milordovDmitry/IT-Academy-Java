@@ -41,4 +41,5 @@ public class StreamAPIRunner {
         System.out.println("Введите текст:");
        return  in.nextLine();
     }
+
 }
